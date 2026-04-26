@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.layout {
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    grid-template-rows: 45px 1fr;
+    height: 100vh;
+}
+
+.layout {
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    grid-template-rows: 45px auto auto;
+    height: 100vh;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 75px;
+    height: 45px;
+    border: 1px solid #C6CDDC;
+}
+
+.top-left {
+    display: flex;
+    gap: 20px;
+}
+
+.top-left a:hover {
+    color: #FD965D;
+}
+
+.top-left a {
+    text-decoration: none;
+    color: #425F96;
+    justify-content: flex-start;
+}
+
+.top-mid {
+    align-items: center;
+}
+
+.top-mid p {
+    color: #425F96;
+}
+
+.top-mid p strong {
+    color: #5BC694;
+}
+
+.top-right {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.top-right select {
+    border: none;
+}
+
+.top-right p {
+    color: #425F96;
+}
+
+.top-right p strong {
+    color: #5BC694;
+}
+
+.sidebar {
+    width: 50px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 70px;
+    border: 1px solid #C6CDDC;
+    gap: 30px;
+    padding: 30px 10px;
+    font-size: 18px;
+    grid-row: 2;
+    grid-column: 1;
+}
+
+.sidebar a i {
+    color: black;
+}
+
+.search {
+    border: 1px solid #EAEFF2;
+    border-radius: 10px;
+    padding: 0;
+    height: 40px;
+    align-items: center;
+    width: 800px;
+}
+
+.drop-but {
+    padding: 16px;
+    border: none;
+    cursor: pointer;
+    background-color: white;
+}
+
+.search-cat {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 200px;
+}
+
+.search-cat a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.search-cat a:hover {
+    background-color: #f1f1f1
+}
+
+.search:hover .search-cat {
+    display: block;
+}
+
+.search:hover .drop-but {
+    background-color: white;
+}
+
+.search .drop-but {
+    color: #4287C7;
+}
+
+.search-cat a {
+    color: #4287C7;
+}
+
+.boxa {
+    border: none;
+}
+
+.navbar {
+    border: 1px solid #C6CDDC;
+    display: flex;
+    justify-content: space-between;
+}
+
+.home {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 200px;
+}
