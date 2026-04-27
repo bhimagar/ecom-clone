@@ -255,3 +255,82 @@ body {
     cursor: pointer;
 }
 
+.hero-right {
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.right-up {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    gap: 12px;
+    border-radius: 10px;
+    height: 240px;
+    width: 450px;
+    background-image: url(/Assets/Right\ Hero\ Up.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 30px 20px;
+}
+
+.right-up .hup1 {
+    color: #425A8B;
+}
+
+.right-up h3 {
+    font-size: 25px;
+    color: #425A8B;
+}
+
+.right-up .hup2 {
+    color: #425A8B;
+    font-size: 20px;
+    max-width: 150px;
+}
+
+.right-up button{
+    background-color: #425A8B;
+    border: none;
+    border-radius: 5px;
+    height: 35px;
+    width: 150px;
+    color: white;
+}
+
+.right-down {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    border-radius: 5px;
+    height: 240px;
+    width: 450px;
+    padding: 30px 20px;
+    background-image: url(/Assets/Hero\ Right\ Down.png);
+    background-repeat: no-repeat;
+    background-position: center;background-size: cover;
+    gap: 12px;
+}
+
+.right-down .hdp1 {
+    color: #425A8B;
+    font-size: 20px;
+
+}
+
+.right-down h3 {
+    font-size: 25px;
+    color: #425A8B;
+}
+
+.right-down button{
+    background-color: #425A8B;
+    border: none;
+    border-radius: 5px;
+    height: 35px;
+    width: 150px;
+    color: white;
+}
