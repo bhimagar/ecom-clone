@@ -105,18 +105,15 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 10px 50px;
-    gap: 30px;
+    /* gap: 30px; */
+    align-items:center;
 }
 
 .nav-left {
     display: flex;
     align-items: center;
-    padding: 0 20px;
+    padding: 0 0 0 20px;
     gap: 40px;
-}
-
-.nav-mid {
-    display: flex;
 }
 
 .search {
@@ -180,11 +177,63 @@ body {
     justify-content: flex-end;
     padding: 10px 30px;
     gap: 20px;
-    font-size: 20px;   
+    font-size: 20px;
+}
+
+.nav-mid {
+    display: flex;
+    /* align-items: center; */
+    justify-content: flex-start;
+    gap: 20px;
+    padding: 0 0px;
+    /* justify-content: center; */
+}
+
+.mid {
+    position: relative;
+}
+
+.mid-btn {
+    padding: 10px 20px;
+    border: none;
+    background: white;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.mid-drop {
+    display: none;
+    position: absolute;
+    background: white;
+    min-width: 180px;
+}
+
+.mid-drop a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+
+}
+
+.mid-drop a:hover {
+    background: #f2f2f2;
+}
+
+.mid:hover .mid-drop {
+    display: block;
 }
 
 .nav-right a {
     color: #425F96;
+}
+
+.mid-contact a {
+    text-decoration: none;
+    color: #425F96;
+    font-size: 15px;
+
 }
 
 .hero {
@@ -238,7 +287,7 @@ body {
 }
 
 .shop-now1:hover {
-    background-color:#425A8B;
+    background-color: #425A8B;
 }
 
 .hero-left .learn-more {
@@ -251,7 +300,7 @@ body {
 }
 
 .learn-more:hover {
-    color:#FD9636;
+    color: #FD9636;
     cursor: pointer;
 }
 
@@ -292,7 +341,7 @@ body {
     max-width: 150px;
 }
 
-.right-up button{
+.right-up button {
     background-color: #425A8B;
     border: none;
     border-radius: 5px;
@@ -311,7 +360,8 @@ body {
     padding: 30px 20px;
     background-image: url(/Assets/Hero\ Right\ Down.png);
     background-repeat: no-repeat;
-    background-position: center;background-size: cover;
+    background-position: center;
+    background-size: cover;
     gap: 12px;
 }
 
@@ -326,7 +376,7 @@ body {
     color: #425A8B;
 }
 
-.right-down button{
+.right-down button {
     background-color: #425A8B;
     border: none;
     border-radius: 5px;
